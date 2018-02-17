@@ -1,0 +1,2 @@
+# BananaGIF
+GIF loading test
