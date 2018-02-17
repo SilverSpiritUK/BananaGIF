@@ -12,9 +12,15 @@ window.onload = function() {
 
     var counter = 0;
     var counter2 = 2;
+    var clicked = false;
     c.onclick = function(){
-      //window.setInterval(doFrame, 110);
-      window.requestAnimationFrame(doFrame);
+      if(!clicked)
+      {
+        //window.setInterval(doFrame, 110);
+        window.requestAnimationFrame(doFrame);
+
+        clicked = true;
+      }
     }
     
     var doFrame = function(){
