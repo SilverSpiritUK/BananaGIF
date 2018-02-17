@@ -9,9 +9,8 @@ function getGIFData(img)
     {
       if(!count) count = 0;
 
-      var img = this.parentElement;
       var ct = this[count].lctFlag ? this[count].lct : this.hdr.gct;
-      var cData = ctx.createImageData(this.img.width, this.img.height);
+      var cData = ctx.createImageData(img.width, img.height);
 
       this[count].pixels.forEach(function(pixel, i) {
        if (this.transparency !== pixel) { // This includes null, if no transparency was defined.

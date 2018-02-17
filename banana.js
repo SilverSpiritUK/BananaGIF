@@ -26,6 +26,7 @@ window.onload = function() {
         //window.setInterval(doFrame, 110);
         window.requestAnimationFrame(doFrame);
 
+//console.log("clicked");
         clicked = true;
       }
     }
