@@ -1,8 +1,15 @@
 window.onload = function() {
+
+    var b = document.getElementById("banana");
+    b.onclick = function()
+    {
+      b.innerHTML = "Hello";
+    }
+
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
     var img = document.createElement("img");
-    img.src = "banana.gif";
+    img.onload = function(){
     c.width = img.width*2;
     c.height = img.height;
     ctx.width = img.width*2;
@@ -39,4 +46,7 @@ window.onload = function() {
 
       window.setTimeout(window.requestAnimationFrame(doFrame),img.gif.delay);
     }
+  };
+
+  img.src = "banana.gif";
 }
